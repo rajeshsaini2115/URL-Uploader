@@ -199,11 +199,11 @@ async def echo(bot, update):
                 if format_string is not None and not "audio only" in format_string:
                     ikeyboard = [
                         InlineKeyboardButton(
-                            "VIDEO" + [ approx_file_size ],
+                            "VIDEO" + "[" + approx_file_size + "]",
                             callback_data=(cb_string_video).encode("UTF-8")
                         ),
                         InlineKeyboardButton(
-                            "FILE" + [ approx_file_size ],
+                            "FILE" + "[" + approx_file_size + "]",
                             callback_data=(cb_string_file).encode("UTF-8")
                         )
                     ]
