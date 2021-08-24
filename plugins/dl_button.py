@@ -268,10 +268,10 @@ File Size: {}""".format(url, humanbytes(total_length))
                     estimated_total_time = elapsed_time + time_to_completion
                     try:
                         current_message = """**Download Status**
-URL: {}
-File Size: {}
-Downloaded: {}
-ETA: {}""".format(
+**URL :** {}
+**File Size :** {}
+**Downloaded :** {}
+**ETA :** {}""".format(
     url,
     humanbytes(total_length),
     humanbytes(downloaded),
