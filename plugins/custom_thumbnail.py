@@ -36,7 +36,7 @@ async def save_photo(bot, update):
         )
         await bot.send_message(
             chat_id=update.chat.id,
-            text="**Thumbnail saved successfully**",
+            text="**✓ Thumbnail Saved Successfuly**",
             reply_to_message_id=update.message_id
         )
 
@@ -54,7 +54,7 @@ async def delete_thumbnail(bot, update):
 
     await bot.send_message(
         chat_id=update.chat.id,
-        text ="**✅ Custom Thumbnail cleared succesfully**",
+        text ="**✓ Custom Thumbnail Cleared Succesfully**",
         reply_to_message_id=update.message_id
     )
 
