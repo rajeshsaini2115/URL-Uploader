@@ -51,4 +51,4 @@ class Translation(object):
     REPORT_SITE_TEXT = "<b>I Can Upload Media From This Site</b>"
     SOMETHING_WRONG = "<b>Something Wrong. Try again.</b>"
     FORCE_SUBSCRIBE_TEXT = "<b>You Must Join My Channel</b>"
-    FREE_USER_LIMIT_Q_SZE = "<b>Sorry , User Can Only 1 Request Per {} Minutes. Please Try Again After {} Seconds Later</b>."
+    FREE_USER_LIMIT_Q_SZE = "<b>1 Request Per</b> {} <b>Minutes \nWait</b> {} <b>Seconds</b>"
