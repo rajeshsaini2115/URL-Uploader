@@ -41,7 +41,7 @@ async def save_photo(bot, update):
         )
 
 
-@Client.on_message(filters.private & filters.command(["deletehumb"]))
+@Client.on_message(filters.private & filters.command(["deletethumbnail"]))
 async def delete_thumbnail(bot, update):
     thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
     #download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id)
@@ -60,7 +60,7 @@ async def delete_thumbnail(bot, update):
 
 
 
-@Client.on_message(filters.private & filters.command(["showthumb"]))
+@Client.on_message(filters.private & filters.command(["showthumbnail"]))
 async def show_thumb(bot, update):
     thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
     if not os.path.exists(thumb_image_path):
