@@ -16,7 +16,7 @@ async def start(bot, update):
     )
 
 @Client.on_message(filters.command(["help"]) & filters.private)
-async def start(bot, update):
+async def help(bot, update):
     await update.reply_text(
         text=Translation.HELP_TEXT
         disable_web_page_preview=True,
@@ -24,7 +24,7 @@ async def start(bot, update):
     )
 
 @Client.on_message(filters.command(["about"]) & filters.private)
-async def start(bot, update):
+async def about(bot, update):
     await update.reply_text(
         text=Translation.ABOUT_TEXT
         disable_web_page_preview=True,
