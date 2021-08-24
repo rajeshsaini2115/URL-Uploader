@@ -41,7 +41,7 @@ async def save_photo(bot, update):
         )
 
 
-@Client.on_message(filters.private & filters.command(["delthumb"]))
+@Client.on_message(filters.private & filters.command(["deletehumb"]))
 async def delete_thumbnail(bot, update):
     thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
     #download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id)
@@ -84,6 +84,6 @@ async def show_thumb(bot, update):
     elif thumb_image_path is None:
         await bot.send_message(
             chat_id=update.chat.id,
-            text="no thumbnail found",
+            text="**No Thumbnail Found**",
             reply_to_message_id=update.message_id
         )
