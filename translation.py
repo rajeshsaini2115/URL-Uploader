@@ -14,13 +14,7 @@ class Translation(object):
 <b>⁍ Send /about For Bot Information</b>
 """
     ABOUT_TEXT = """
-<b>⁍ Bot</b> : <b>Url Uploader</b>
-<b>⁍ Modified</b> : <a href='https://Telegram.me/David9010'>Garou</a> 
-<b>⁍ Channel</b> :  <a href='https://Telegram.me/David_Botz'>BotZ</a> 
-<b>⁍ Credits</b> : <b>Everyone in this journey</b>
-<b>⁍ Language</b> : <a href='https://Python.org'>Python</a>
-<b>⁍ Library</b> : <a href='https://docs.pyrogram.org'>Pyrogram</a>
-<b>⁍ Server</b> : <a href='https://Heroku.com'>Heroku</a>
+**A Modified Url Uploader Bot**
 """
     START_BUTTONS = InlineKeyboardMarkup(
         [[
